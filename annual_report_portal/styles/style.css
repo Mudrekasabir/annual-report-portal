@@ -1,0 +1,207 @@
+/* ============================================================
+   LIGHT BEIGE PREMIUM THEME — CLEAN & HIGH VISIBILITY
+============================================================ */
+
+:root {
+    /* ---- Light Theme Colors (Readable) ---- */
+    --bg-main: #FAF7F1;          /* Soft clean beige background */
+    --bg-card: #FFFFFF;          /* Bright card */
+    --bg-accent: #F0E7D9;        /* Muted beige for headers & tables */
+
+    --primary: #C4A77D;          /* Premium beige gold */
+    --primary-hover: #B19169;    
+
+    --text-main: #0F0F0F;        /* TRUE BLACK for perfect visibility */
+    --text-light: #4B463F;       /* Soft gray-brown */
+
+    --border-light: #DCD1C1;
+    --border-dark: #C8B79F;
+
+    --success: #6CAA6C;
+    --warning: #D8B178;
+    --danger:  #CE6969;
+    --secondary: #BBAA8B;
+}
+
+/* ---------- BODY ---------- */
+body {
+    background: var(--bg-main) !important;
+    color: var(--text-main) !important;
+    font-family: "Inter", sans-serif;
+}
+
+/* ============================================================
+   DARK MODE — REVERSING THE PALETTE
+============================================================ */
+
+[data-theme="dark"] {
+    --bg-main: #2C241C;         /* Soft dark beige-brown */
+    --bg-card: #3B3229;         /* Deeper beige brown */
+    --bg-accent: #4A4036;       /* Highlight beige */
+
+    --primary: #D2B48C;         /* Tan */
+    --primary-hover: #C19A6B;
+
+    --text-main: #F5EDE2;       /* Ivory white */
+    --text-light: #DFD2C2;
+
+    --border-light: #6B5D50;
+    --border-dark: #5C4D3F;
+
+    --success: #97C99C;
+    --warning: #E4C58F;
+    --danger:  #E28C8C;
+    --secondary: #CFC4B0;
+}
+
+[data-theme="dark"] body {
+    background: var(--bg-main) !important;
+}
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+.navbar,
+.navbar-dark.bg-primary {
+    background: var(--primary) !important;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: var(--bg-accent) !important;
+}
+
+/* ============================================================
+   DASHBOARD / PAGE HEADERS
+============================================================ */
+.p-4.mb-4.rounded-3,
+.header-section,
+.page-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover)) !important;
+    color: #fff !important;
+    border-radius: 14px;
+}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn-primary {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover) !important;
+}
+
+.btn-secondary {
+    background: var(--bg-accent) !important;
+    border-color: var(--border-dark);
+    color: var(--text-main) !important;
+}
+
+.btn-secondary:hover {
+    background: var(--border-light) !important;
+}
+
+/* OUTLINE BUTTONS */
+.btn-outline-primary {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+.btn-outline-primary:hover {
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+/* Danger Outline */
+.btn-outline-danger {
+    border-color: var(--danger) !important;
+    color: var(--danger) !important;
+}
+.btn-outline-danger:hover {
+    background: var(--danger) !important;
+    color: #fff !important;
+}
+
+/* ============================================================
+   CARDS
+============================================================ */
+.card,
+.shadow-sm {
+    background: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 14px;
+}
+
+/* ============================================================
+   TABLES
+============================================================ */
+.table {
+    background: var(--bg-card) !important;
+    color: var(--text-main) !important;
+}
+
+.table thead {
+    background: var(--bg-accent) !important;
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background: #EFE9DE !important;
+}
+
+/* ============================================================
+   FORM INPUTS
+============================================================ */
+.form-control,
+.form-select {
+    background: #F7F2EB !important;
+    border: 1px solid var(--border-light) !important;
+    color: var(--text-main) !important;
+}
+
+.form-control::placeholder {
+    color: #6F675E !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 .2rem rgba(197, 169, 130, .35) !important;
+}
+
+/* ============================================================
+   BADGES
+============================================================ */
+.badge.bg-success { background: var(--success) !important; }
+.badge.bg-warning { background: var(--warning) !important; }
+.badge.bg-danger  { background: var(--danger) !important; }
+.badge.bg-secondary { background: var(--secondary) !important; }
+
+/* ============================================================
+   DROPDOWNS
+============================================================ */
+.dropdown-menu {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-light);
+}
+.dropdown-item:hover {
+    background: var(--bg-accent) !important;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+footer {
+    background: var(--bg-accent) !important;
+    color: var(--text-main) !important;
+}

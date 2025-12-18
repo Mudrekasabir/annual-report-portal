@@ -1,0 +1,9 @@
+2025-11-22 13:00:35 - === API CALLED ===
+2025-11-22 13:00:35 - User ID: 14
+2025-11-22 13:00:35 - CSRF token validated
+2025-11-22 13:00:35 - Title: test
+2025-11-22 13:00:35 - Year: 2025-2026
+2025-11-22 13:00:35 - Status: draft
+2025-11-22 13:00:35 - Content length: 758
+2025-11-22 13:00:35 - Report created - ID: 25
+2025-11-22 13:00:35 - SUCCESS: Report saved as draft successfully!
